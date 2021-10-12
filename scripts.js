@@ -23,25 +23,32 @@ points_all_answers = 0;
 //     alert ('No, thats not how things are done!');
 // }
 
-// color_sky = prompt (`What color is the sky?`).trim().toLowerCase();
+color_sky = prompt (`What color is the sky?`).trim().toLowerCase();
 
-// if (color_sky == 'blue') {
-//     alert ('Good!');
-//     console.log (points_all_answers += 10); 
-// } else {
-//     alert ('Нет, пишите на английском!'); 
-// } 
-
-philosophical_question = prompt (`What is the correct answer to the main question of life, the universe and all that?`).trim().toLowerCase();
-
-switch (philosophical_question) {
-    case '42':
-        alert ("Right, Deep Thought is proud of you!");
+switch (color_sky) {
+    case 'blue':
+    case 'синий':
+    case 'блакитний':
+    case 'blau': 
         console.log (points_all_answers += 10);
         break;
-    default:
-        alert ("Don't right, ask Deep Thought!");
+    case '':
+    case null:
         break;
+    default:
+        alert ("Error, enter right value");
 }
 
-//alert (`Your result ${points_all_answers}!`);
+// philosophical_question = prompt (`What is the correct answer to the main question of life, the universe and all that?`).trim().toLowerCase();
+
+// switch (philosophical_question) {
+//     case '42':
+//         alert ("Right, Deep Thought is proud of you!");
+//         console.log (points_all_answers += 10);
+//         break;
+//     default:
+//         //alert ("Don't right, ask Deep Thought!");
+//         break;
+// }
+
+alert (`Your result ${points_all_answers} points!`);
