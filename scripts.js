@@ -3,36 +3,45 @@ points_all_answers = 0;
 // amount = prompt (`What's 2+2?`);
 // if (amount === '4') {
 //     alert ('Well done!');
-//     console.log (points_all_answers = 10);
+//     console.log (points_all_answers += 10);
 // } else {
 //     alert ('error');
-//     console.log (points_all_answers = 0);
 // }
 
-//sun = confirm (`Солнце встает на востоке?`);
+// sun = confirm (`The sun rises in the east?`);
 
 // if (sun) {
-//     console.log (points_all_answers = 10);
+//     console.log (points_all_answers += 10);
 // } 
 
-incorrect_question = confirm (`Сколько будет 5 / 0? Spoiler, press OK, i will give you 10 points=))`);
+// incorrect_question = confirm (`How much 5 / 0? Spoiler, press OK, i will give you 10 points=))`);
 
-if (incorrect_question) {
-    alert ('We will agree!'); 
-    console.log (sum = points_all_answers = 10);
-} else {
-    alert ('No, thats not how things are done!');
-    console.log (points_all_answers = 0);
+// if (incorrect_question) {
+//     alert ('We will agree!'); 
+//     console.log (points_all_answers += 10);
+// } else {
+//     alert ('No, thats not how things are done!');
+// }
+
+// color_sky = prompt (`What color is the sky?`).trim().toLowerCase();
+
+// if (color_sky == 'blue') {
+//     alert ('Good!');
+//     console.log (points_all_answers += 10); 
+// } else {
+//     alert ('Нет, пишите на английском!'); 
+// } 
+
+philosophical_question = prompt (`What is the correct answer to the main question of life, the universe and all that?`).trim().toLowerCase();
+
+switch (philosophical_question) {
+    case '42':
+        alert ("Right, Deep Thought is proud of you!");
+        console.log (points_all_answers += 10);
+        break;
+    default:
+        alert ("Don't right, ask Deep Thought!");
+        break;
 }
 
-color_sky = prompt (`What color is the sky?`).trim().toLowerCase();
-
-if (color_sky == 'blue') {
-    alert ('Good!');
-    console.log (sum = points_all_answers = 10); 
-} else {
-    alert ('Нет, пишите на английском!');
-    console.log (points_all_answers = 0); 
-} 
-
-alert (sum = points_all_answers);
+//alert (`Your result ${points_all_answers}!`);
