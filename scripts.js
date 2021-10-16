@@ -23,8 +23,8 @@ if (incorrect_question) {
     alert ('No, thats not how things are done!');
 }
 
-color_sky = prompt (`What color is the sky?`);//.trim().toLowerCase();
-color_sky = color_sky ? color_sky.trim().toLowerCase() : `;`
+color_sky = prompt (`What color is the sky?`);
+color_sky = color_sky ? color_sky.trim().toLowerCase() : ``;
 
 switch (color_sky) {
     case 'blue':
